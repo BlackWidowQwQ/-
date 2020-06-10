@@ -26,7 +26,9 @@ ol {
 
 /*style*/
 body {
-  background: #eee;
+  background: no-repeat bottom/80% url("./logo/cao.png");
+  background-color: #eee;
+  background-attachment: fixed;
 }
 
 .globalHeader {
@@ -40,10 +42,15 @@ body {
 
 @media (min-width: 500px) {
   .searchForm {
-    max-width: 400px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.titleImg {
+  margin: 0 auto;
+  width: 150px;
 }
 
 .searchForm > input {
@@ -51,15 +58,19 @@ body {
   margin-right: 10px;
   height: 40px;
   padding: 0 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+}
+
+.searchForm > input:focus {
+  outline: none;
 }
 .searchForm > button {
   white-space: nowrap;
   padding: 0 28px;
   background: #1f30cb;
   border: 1px solid #dddddd;
-  border-radius: 4px;
+  border-radius: 10px;
   color: white;
 }
 
